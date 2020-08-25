@@ -7,7 +7,8 @@ RUN sudo apt-get update && sudo apt-get install -y \
         cmake \
         curl \
         file \
-        git && \
+		git \
+		gcc-mingw-w64 && \
 	sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/* && \
 	curl https://sh.rustup.rs -sSf && \
 	rustup target add x86_64-pc-windows-gnu && \
